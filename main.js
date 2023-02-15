@@ -1,6 +1,7 @@
 var SpeechRecognition = window.webkitSpeechRecognition;
 var Content;
 var recognition = new SpeechRecognition();
+let imgeId;
 
 function start()
 {
@@ -40,7 +41,7 @@ function speak(){
 
 
 
-        let imgeId = "selfie1";
+        imgeId = "selfie1";
         takeSelfie()
         speakData = "Tirando sua selfie em 10 segundos";
         var utterThis = new SpeechSynthesisUtterance(speakData);
@@ -52,7 +53,7 @@ function speak(){
 
 
 
-        let imgeId = "selfie2";
+        imgeId = "selfie2";
         takeSelfie()
         speakData = "Tirando sua selfie em 15 segundos";
         var utterThis = new SpeechSynthesisUtterance(speakData);
@@ -64,7 +65,7 @@ function speak(){
 
 
 
-        let imgeId = "selfie3";
+        imgeId = "selfie3";
         takeSelfie()
         speakData = "Tirando sua selfie em 20 segundos";
         var utterThis = new SpeechSynthesisUtterance(speakData);
